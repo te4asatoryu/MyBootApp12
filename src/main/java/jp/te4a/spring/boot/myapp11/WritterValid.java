@@ -15,7 +15,8 @@ import javax.validation.Payload;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface WritterValid{
     String ok();
-    String message() default  "{ok}の著者のみ許可されます";
+    String message() default  "東北タロウと入力してください　input = ${validatedValue}";
+
     // Classオブジェクトを得る（戻り値とする）メソッドgroups()
     // デフォルト値は空のクラス
     Class<?>[] groups() default {};
